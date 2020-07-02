@@ -95,6 +95,14 @@ body {
     text-align: center;
     padding: 0 20px;
   }
+  .social {
+    // overflow: hidden;
+    background-color: transparent;
+    position: fixed; 
+    top: 0; 
+    width: 117px; 
+    z-index: 10;
+  }
 
   .header__inner-title {
     font-size: 16px;
@@ -209,13 +217,8 @@ justify-content: space-between;
 
 .footer__inner {
   position: relative;
-  padding-left: 125px;
   padding-top: 20px;
   font-size: 20px;
-  .social {
-    top: 10px;
-    max-width: 100px;
-  }
 }
 
 .copyright {
@@ -224,6 +227,6 @@ justify-content: space-between;
  
 @media(max-width: 575px)  {
   .footer__inner {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
