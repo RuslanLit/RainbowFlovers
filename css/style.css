@@ -155,9 +155,7 @@ body {
 
 @media (max-width: 565px) {
   .main-content__slider {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+            justify-content: flex-start;
   }
 }
 
