@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,6 +10,7 @@ html {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   min-width: 320px;
   overflow-x: hidden;
   background-color: #000;
@@ -16,12 +18,15 @@ body {
   font-size: 16px;
 }
 
-.container {
-  padding: 0px 5px;
+.logo__img {
+  max-width: 100%;
 }
 
-.container img {
-  max-width: 100%;
+.container {
+  padding: 0px 5px;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .header {
@@ -29,6 +34,7 @@ body {
 }
 
 .header__inner {
+  padding-top: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +42,34 @@ body {
       flex-wrap: wrap;
 }
 
+.header__inner-img {
+  position: absolute;
+  top: 43px;
+  width: 443px;
+  height: 435px;
+  right: 13px;
+  z-index: -1;
+}
+
+.header__inner-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 218.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: 0.145em;
+  max-width: 58%;
+}
+
 .social {
+  position: absolute;
+  top: 37px;
+  left: -65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,26 +86,162 @@ body {
   height: 36px;
 }
 
-.logo {
-  display: inline-block;
-  width: 100%;
+@media (max-width: 1350px) {
+  .social {
+    left: 10px;
+  }
 }
 
-.logo-img {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 150px;
-  width: 100%;
+@media (max-width: 1045px) {
+  .header__inner-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 0px 20px;
+    height: auto;
+  }
+  .logo {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .header__inner-title {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: justify;
+    display: inline-block;
+    padding: 0px 8px;
+  }
+  .logo {
+    display: inline-block;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 1045px) and (max-width: 355px) {
+  .logo-img {
+    min-height: 9.2rem;
+  }
 }
 
 .main-content {
+  padding-top: 2%;
+}
+
+.main-content-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-bottom: 5%;
+}
+
+.main-content__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main-content__img {
-  width: 100%;
+@media (max-width: 565px) {
+  .main-content__slider {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.content__item {
+  max-width: 270px;
+  margin: 10px 2% 15%;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.content__item-title {
+  margin-bottom: 3%;
+}
+
+.content__item-price {
+  margin-top: 3%;
+}
+
+@media (min-width: 1167px) {
+  .content__item {
+    margin-bottom: 50px;
+  }
+}
+
+.content__item .content__item-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 243px;
+}
+
+@media (max-width: 575px) {
+  .content__item .content__item-img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 385px) {
+  .content__item {
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 650px) {
+  .content__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main-content__slider {
+    padding: 0px 30px;
+  }
+}
+
+@media (min-width: 1167px) {
+  .main-content__slider {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: hidden;
+  }
+}
+
+.rub {
+  display: inline-block;
+  margin-left: 3px;
+  background-image: url(../images/icons/ruble.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 16px;
+}
+
+.footer__inner {
+  position: relative;
+  padding-left: 125px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.footer__inner .social {
+  top: 10px;
+  max-width: 100px;
+}
+
+.copyright {
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  .footer__inner {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
