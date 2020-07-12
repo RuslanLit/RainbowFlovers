@@ -6,9 +6,6 @@ $(function(){
             'zoom',
             'fullScreen',
             'close'
-        ],
-        thumbs: {
-            autoStart: true
-        }
+        ]
     });
 });
