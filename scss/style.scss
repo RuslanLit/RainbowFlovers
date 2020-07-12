@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+.fancybox-caption__body {
+  color: #6bd5fd;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   min-width: 320px;
@@ -84,7 +88,7 @@ body {
 
 @media(max-width: 1350px) {
   .social {
-      left: 10px;
+      left: 15px;
     }
 }
 
@@ -102,7 +106,7 @@ body {
     padding: 0 20px;
   }
   .social {
-    top: 0; 
+    top: 5px; 
     width: 70px; 
     z-index: 10;
   }
@@ -164,15 +168,48 @@ justify-content: space-between;
 .content__item .content__item-img {
   object-fit: cover;
   width: 257px;
-  height: 245px;
 }
+
+@media(min-width: 811px) {
+  .content__item .content__item-img {
+    height: 245px;
+  }
+  .social-ico {
+    width: 40px;
+    height: 40px;
+}
+  .social {
+    width: 126px;
+  }
+}
+
+@media(min-width: 730px) {
+  .content__item .content__item-img {
+    height: 180px;
+  }
+  .content__item {
+    max-width: 215px;
+  }
+}
+
 @media(min-width: 1167px) {
   .content__item {
       margin-bottom: 50px;
     }
+    .content__link {
+      display: none;
+    }
+    .main-content__slider .content__link:nth-child(-n+3) {
+      display: inline-block;
+    }
 }
 
-
+@media(max-width: 839px) {
+  .main-content-title {
+    padding: 0;
+    text-align: center;
+  }
+}
 
 @media(max-width: 575px) {
   .content__item .content__item-img {
@@ -190,6 +227,29 @@ justify-content: space-between;
   }
 }
 
+@media(max-width: 515px) {
+  .social-ico {
+    width: 24px;
+    height: 24px;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .main-content-title {
+    font-size: 18px;
+  }
+  .main-content {
+    padding-top: 0.5em;
+}
+}
+
+@media (min-width: 516px) and (max-width: 816px) {
+  .social-ico {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media(max-width: 650px) {
   .content__item {
     font-size: 14px;
@@ -198,9 +258,7 @@ justify-content: space-between;
   .main-content__slider {
     padding: 0px 30px;
   }
-
 }
-
 @media(min-width: 1167px) {
   .main-content__slider {
     flex-wrap: nowrap;
@@ -231,5 +289,11 @@ justify-content: space-between;
 @media(max-width: 575px)  {
   .footer__inner {
     font-size: 14px;
+  }
+}
+
+@media(max-width: 1044px) {
+  .header__inner-title {
+    display: none;
   }
 }

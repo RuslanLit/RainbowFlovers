@@ -6,6 +6,7 @@ $(function(){
             'zoom',
             'fullScreen',
             'close'
-        ]
+        ],
+        loop: true
     });
 });
